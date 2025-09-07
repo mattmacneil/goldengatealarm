@@ -106,16 +106,20 @@
     <!-- Contact -->
     <section id="contact" class="py-16 max-w-6xl mx-auto px-6">
       <h3 class="text-3xl font-bold text-center mb-4">Get In Touch</h3>
-      <form class="bg-white p-8 rounded-2xl shadow-md max-w-2xl mx-auto">
+      <form 
+        class="bg-white p-8 rounded-2xl shadow-md max-w-2xl mx-auto"
+        action="https://formspree.io/f/xvgbdwar"
+        method="POST"
+        >
         <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" placeholder="Full Name" class="p-3 border rounded-lg" required />
-          <input type="email" placeholder="Email Address" class="p-3 border rounded-lg" required />
-          <input type="text" placeholder="Phone Number" class="p-3 border rounded-lg" />
-          <input type="text" placeholder="Service Needed" class="p-3 border rounded-lg" />
-          <input type="text" placeholder="Address" class="p-3 border rounded-lg md:col-span-2" />
+          <input name="name" type="text" placeholder="Full Name" class="p-3 border rounded-lg" required />
+          <input name="email" type="email" placeholder="Email Address" class="p-3 border rounded-lg" required />
+          <input name="phone" type="tel" placeholder="Phone Number" class="p-3 border rounded-lg" />
+          <input name="service" type="text" placeholder="Service Needed" class="p-3 border rounded-lg" />
+          <input name="address" type="text" placeholder="Address" class="p-3 border rounded-lg md:col-span-2" />
         </div>
         <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg mt-6"></textarea>
-        <button class="mt-6 w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-lg">Submit Inquiry</button>
+        <button type="submit" class="mt-6 w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-lg">Submit Inquiry</button>
       </form>
     </section>
 
